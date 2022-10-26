@@ -11,17 +11,13 @@ public class Program
 		
 		string UserNumber = Console.ReadLine();
 		int Num = Int32.Parse(UserNumber);
-		
-		Console.WriteLine(Num);
-		
+				
 		var rand = new Random();
 		
 		for (int i = 0; i < Num; i++)
 		{
 			int coin = rand.Next(2);
 			
-			Console.WriteLine(coin);
-
 			if (coin == 0)
 			{
 				Console.WriteLine("Heads");	
